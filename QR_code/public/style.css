@@ -1,0 +1,12 @@
+body{
+    background-color: greenyellow;
+    padding: 50 px;
+}
+form{
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    align-items: center;
+
+    justify-content: center;
+}
