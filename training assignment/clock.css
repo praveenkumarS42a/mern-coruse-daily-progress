@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    color: #00d4ff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 60px #00d4ff;
+    }
+    to {
+        text-shadow: 0 0 30px #00ffbb, 0 0 60px #00ffbb, 0 0 80px #00ffbb;
+    }
+}
+
+.clock {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.clock .time span {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: tick 1s infinite;
+    transition: transform 0.3s;
+}
+
+.clock .time span:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px #00ffbb, 0 0 20px #00ffbb;
+}
+
+@keyframes tick {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.colon {
+    animation: fade 1s infinite alternate;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}

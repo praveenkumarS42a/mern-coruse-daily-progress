@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Leaf Cafe</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5e9; /* Light cream background */
+            color: #2f4f2f; /* Dark green text */
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2e8b57; /* Forest green */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #3cb371; /* Medium sea green */
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        nav a:hover {
+            color: #f5f5e9; /* Light cream */
+            transform: scale(1.1);
+        }
+
+        /* Home Section */
+        #home {
+            text-align: center;
+            padding: 2rem;
+            background-image: url('coffee-greenery.jpg'); /* Replace with actual hero image path */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        #home h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Menu Section */
+        #menu {
+            padding: 2rem;
+            text-align: center;
+        }
+        #menu h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #3cb371;
+        }
+        #menu table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            text-align: left;
+        }
+        #menu th, #menu td {
+            border: 1px solid #ccc;
+            padding: 1rem;
+        }
+        #menu th {
+            background-color: #3cb371;
+            color: white;
+        }
+        #menu td {
+            background-color: #f5f5e9;
+        }
+
+        /* About Us Section */
+        #about-us {
+            padding: 2rem;
+            text-align: center;
+            background-color: #eef5e6; /* Light green background */
+        }
+        #about-us img {
+            width: 80%;
+            max-width: 400px;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 2rem;
+            text-align: center;
+        }
+        #contact form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        #contact label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+            font-weight: bold;
+        }
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #contact button {
+            background-color: #3cb371;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #contact button:hover {
+            background-color: #2e8b57;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #f5f5e9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>The Green Leaf Cafe</h1>
+        <p>Where Nature Meets Coffee</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about-us">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to The Green Leaf Cafe</h2>
+        <p>Your eco-friendly spot for organic brews</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Organic Coffee</td>
+                <td>Aromatic and sustainable coffee from eco-friendly farms.</td>
+            </tr>
+            <tr>
+                <td>Herbal Tea</td>
+                <td>Refreshing blends of organic herbs and spices.</td>
+            </tr>
+            <tr>
+                <td>Vegan Snacks</td>
+                <td>Delicious plant-based treats for every palate.</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>The Green Leaf Cafe is committed to sustainability and offering the finest organic beverages and snacks in an eco-friendly environment.</p>
+        <img src="C:\Users\prave\Downloads\green leaf cafe.png" alt="Interior of The Green Leaf Cafe">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>123 Greenway Blvd, EcoTown | Phone: (123) 456-7890</p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Twitter</a></p>
+        <p>&copy; 2025 The Green Leaf Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

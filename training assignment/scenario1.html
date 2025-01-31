@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats Bakery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: skyblue; /* Light cream background */
+        }
+        header {
+            background-color: #ff9966; /* Vibrant orange */
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            background-color: #ff704d; /* Slightly darker orange */
+            padding: 0.75rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        nav a:hover {
+            color: #ffe6cc; /* Soft cream color */
+            transform: scale(1.1);
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        .section-title {
+            color: #ff704d;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        #menu div {
+            margin: 2rem 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+        #menu div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        #menu img {
+            width: 200px;
+            height:100px;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        #menu img:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+        footer {
+            background-color: #ff9966;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweet Treats</h1>
+        <p>Where Every Bite Feels Like a Hug</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact-us">Contact Us</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2 class="section-title">Welcome to Sweet Treats!</h2>
+            <p>Experience the magic of freshly baked goods crafted with love and perfection.</p>
+        </section>
+        <section id="about-us">
+            <h2 class="section-title">About Us</h2>
+            <p>Sweet Treats is your neighborhood bakery dedicated to creating irresistible baked goods that make every day special. From cookies to cakes, we bring smiles to your table!</p>
+        </section>
+        <section id="menu">
+            <h2 class="section-title">Our Top Picks</h2>
+            <div>
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Warm, gooey, and loaded with chocolate chips.</p>
+                <img src="C:\Users\prave\Downloads\Soft-Chocolate-Chip-Cookies-3.webp" alt="Chocolate Chip Cookies">
+            </div>
+            <div>
+                <h3>Red Velvet Cupcakes</h3>
+                <p>Fluffy, rich cupcakes with a creamy frosting.</p>
+                <img src="C:\Users\prave\Downloads\Red-Velvet-Cupcakes-6.jpg" alt="Red Velvet Cupcakes">
+            </div>
+            <div>
+                <h3>Lemon Tarts</h3>
+                <p>Zesty, tangy, and topped with a golden crust.</p>
+                <img src="C:\Users\prave\Downloads\Lemon-Tart-recipe-1-of-1.jpg" alt="Lemon Tarts">
+            </div>
+        </section>
+        <section id="contact-us">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Email: praveenkumar@gmail.com</p>
+            <p>Phone: 6379604045</p>
+            <p>Address: 123 Sweet Lane, Dessert City</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Sweet Treats Bakery. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

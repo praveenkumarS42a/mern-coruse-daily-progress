@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Digital Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00d4ff;
+            text-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 60px #00d4ff;
+            }
+            to {
+                text-shadow: 0 0 30px #00ffbb, 0 0 60px #00ffbb, 0 0 80px #00ffbb;
+            }
+        }
+
+        .clock {
+            font-size: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .time span {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .time span:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 30px #00ffbb, 0 0 40px #00ffbb;
+        }
+
+        .colon {
+            animation: pulse 1s infinite;
+            color: #00ffbb;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Advanced Digital Clock</h1>
+        <div class="clock">
+            <div class="time">
+                <span id="hours">00</span>
+                <span class="colon">:</span>
+                <span id="minutes">00</span>
+                <span class="colon">:</span>
+                <span id="seconds">00</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function clock() {
+            const hours = document.getElementById('hours');
+            const minutes = document.getElementById('minutes');
+            const seconds = document.getElementById('seconds');
+
+            let h = new Date().getHours();
+            let m = new Date().getMinutes();
+            let s = new Date().getSeconds();
+
+            h = h < 10 ? '0' + h : h;
+            m = m < 10 ? '0' + m : m;
+            s = s < 10 ? '0' + s : s;
+
+            hours.innerHTML = h;
+            minutes.innerHTML = m;
+            seconds.innerHTML = s;
+        }
+
+        setInterval(clock, 1000);
+    </script>
+</body>
+</html>
